@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World. 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <h1>Teste 123</h1>;
 }
-
 export default App;
+
+//Formas de criar componentes 
+/*
+class App extends React.Component {
+  render() {
+   return <h1>Teste</h1>;
+  }
+}
+*/
+
+/* função anonima
+let App = () => {
+   return <h1>Teste</h1>;
+}
+*/
+
+/*
+let App = () => <h1>Teste</h1>;
+*/

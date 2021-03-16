@@ -1,7 +1,16 @@
 import React from 'react';
 
+function retornarNome(usuario) {
+  return usuario.nome+' '+usuario.sobreNome;
+}
+
 function App() {
-  return <h1>Teste 123</h1>;
+  let usuario = {
+    nome: "Luccas",
+    sobreNome: "Mesquita"
+  };
+
+  return <h1>meu nome é {retornarNome(usuario)}</h1>;
 }
 export default App;
 
@@ -23,3 +32,5 @@ let App = () => {
 /*
 let App = () => <h1>Teste</h1>;
 */
+
+// O JSX só permite retornar um elemento, então sempre temos que colocar uma div ao redor de tudo

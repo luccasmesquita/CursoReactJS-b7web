@@ -1,5 +1,16 @@
 import React from 'react';
 
+function BemVindo(props) {
+  return <h1>Ola, {props.nome}</h1>;
+}
+
+function App() {
+ return <>
+ <BemVindo nome="Luccas"/>
+ </>;
+}
+
+/*   *** O JSX só permite retornar um elemento, então sempre temos que colocar uma div ao redor de tudo
 function retornarNome(usuario) {
   return usuario.nome+' '+usuario.sobreNome;
 }
@@ -12,25 +23,23 @@ function App() {
 
   return <h1>meu nome é {retornarNome(usuario)}</h1>;
 }
-export default App;
+*/
 
-//Formas de criar componentes 
+//  *** Formas de criar componentes 
 /*
 class App extends React.Component {
   render() {
    return <h1>Teste</h1>;
   }
 }
-*/
 
-/* função anonima
+-- função anonima
 let App = () => {
    return <h1>Teste</h1>;
 }
-*/
 
-/*
 let App = () => <h1>Teste</h1>;
 */
 
-// O JSX só permite retornar um elemento, então sempre temos que colocar uma div ao redor de tudo
+
+export default App;

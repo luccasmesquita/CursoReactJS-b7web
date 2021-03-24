@@ -9,12 +9,15 @@ background-color: green;
 const Title = styled.h1`
 color: #ff0000;
 font-size: 18px;
+background-color: ${props => props.color || '#00FF00'};
 `;
 
 function App() {
  return (
   <Site>
     <Title>Titulo legal</Title>
+    <Title color="#0000FF">Titulo legal</Title>
+
   </Site>
   )
 }

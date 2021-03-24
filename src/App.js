@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
-function Avatar(props) {
-  return (
-    <div className="avatar">
-      <span>{props.user.name}</span>
-    </div>
-  );
-}
+import styled from 'styled-components';
+
+const Site = styled.div`
+width: 400px;
+background-color: green;
+`;
+const Title = styled.h1`
+color: #ff0000;
+font-size: 18px;
+`;
 
 function App() {
-  let user = {
-    name:"Luccas Mesquita"
-  };
-  
- return <>
-  <Avatar user={user} />
- </>;
+ return (
+  <Site>
+    <Title>Titulo legal</Title>
+  </Site>
+  )
 }
 
 /* ** Props

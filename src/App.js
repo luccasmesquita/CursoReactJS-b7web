@@ -1,5 +1,24 @@
 import React from 'react';
+import './App.css';
+function Avatar(props) {
+  return (
+    <div className="avatar">
+      <span>{props.user.name}</span>
+    </div>
+  );
+}
 
+function App() {
+  let user = {
+    name:"Luccas Mesquita"
+  };
+  
+ return <>
+  <Avatar user={user} />
+ </>;
+}
+
+/* ** Props
 function BemVindo(props) {
   return <h1>Ola, {props.nome}</h1>;
 }
@@ -9,6 +28,8 @@ function App() {
  <BemVindo nome="Luccas"/>
  </>;
 }
+*/
+
 
 /*   *** O JSX só permite retornar um elemento, então sempre temos que colocar uma div ao redor de tudo
 function retornarNome(usuario) {
